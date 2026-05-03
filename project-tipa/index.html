@@ -1,0 +1,4660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDE172 Philosophy Exam Answers</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --paper: #fffdf9;
+        --ink: #1e1a17;
+        --muted: #6c625a;
+        --accent: #8f3d2e;
+        --line: #dfd3c5;
+        --shadow: 0 14px 40px rgba(57, 38, 24, 0.12);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(143, 61, 46, 0.12),
+            transparent 32%
+          ),
+          linear-gradient(180deg, #f9f3eb 0%, var(--bg) 100%);
+      }
+      .shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 24px auto 56px;
+      }
+      header {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4vw, 3.6rem);
+        line-height: 1.02;
+      }
+      header p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+      .toc {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .toc a {
+        text-decoration: none;
+        color: var(--accent);
+        border: 1px solid var(--line);
+        background: #fff7ef;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+      }
+      .grid {
+        display: grid;
+        gap: 18px;
+        margin-top: 22px;
+      }
+      .card {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+        scroll-margin-top: 16px;
+      }
+      .meta {
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.76rem;
+        margin-bottom: 8px;
+      }
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.16rem;
+        line-height: 1.38;
+      }
+      .answer {
+        margin: 0;
+        font-size: 1.03rem;
+        line-height: 1.55;
+      }
+      .note {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.45;
+      }
+      .evidence {
+        display: grid;
+        grid-template-columns: minmax(260px, 420px) 1fr;
+        gap: 18px;
+        margin-top: 18px;
+        align-items: start;
+      }
+      .evidence img {
+        width: 100%;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+      .evidence-text {
+        background: #fff9f2;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px 16px;
+      }
+      .evidence-text p {
+        margin: 0 0 8px;
+        line-height: 1.5;
+      }
+      .evidence-text p:last-child {
+        margin-bottom: 0;
+      }
+      @media (max-width: 820px) {
+        .shell {
+          width: min(100% - 18px, 1180px);
+        }
+        header,
+        .card {
+          border-radius: 18px;
+          padding: 18px;
+        }
+        .evidence {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <h1>MDE172 Philosophy Exam<br />135 Questions with Answers</h1>
+        <p>
+          Each block contains the original question, a short answer, and a page
+          image from the lecture where the relevant material appears.
+        </p>
+        <p>
+          Some questions in the exam refer to missing multiple-choice options.
+          Those answers are marked with a short note when they were
+          reconstructed from the lecture context.
+        </p>
+        <div class="toc">
+          <a href="#q1">1</a><a href="#q2">2</a><a href="#q3">3</a
+          ><a href="#q4">4</a><a href="#q5">5</a><a href="#q6">6</a
+          ><a href="#q7">7</a><a href="#q8">8</a><a href="#q9">9</a
+          ><a href="#q10">10</a><a href="#q11">11</a><a href="#q12">12</a
+          ><a href="#q13">13</a><a href="#q14">14</a><a href="#q15">15</a
+          ><a href="#q16">16</a><a href="#q17">17</a><a href="#q18">18</a
+          ><a href="#q19">19</a><a href="#q20">20</a><a href="#q21">21</a
+          ><a href="#q22">22</a><a href="#q23">23</a><a href="#q24">24</a
+          ><a href="#q25">25</a><a href="#q26">26</a><a href="#q27">27</a
+          ><a href="#q28">28</a><a href="#q29">29</a><a href="#q30">30</a
+          ><a href="#q31">31</a><a href="#q32">32</a><a href="#q33">33</a
+          ><a href="#q34">34</a><a href="#q35">35</a><a href="#q36">36</a
+          ><a href="#q37">37</a><a href="#q38">38</a><a href="#q39">39</a
+          ><a href="#q40">40</a><a href="#q41">41</a><a href="#q42">42</a
+          ><a href="#q43">43</a><a href="#q44">44</a><a href="#q45">45</a
+          ><a href="#q46">46</a><a href="#q47">47</a><a href="#q48">48</a
+          ><a href="#q49">49</a><a href="#q50">50</a><a href="#q51">51</a
+          ><a href="#q52">52</a><a href="#q53">53</a><a href="#q54">54</a
+          ><a href="#q55">55</a><a href="#q56">56</a><a href="#q57">57</a
+          ><a href="#q58">58</a><a href="#q59">59</a><a href="#q60">60</a
+          ><a href="#q61">61</a><a href="#q62">62</a><a href="#q63">63</a
+          ><a href="#q64">64</a><a href="#q65">65</a><a href="#q66">66</a
+          ><a href="#q67">67</a><a href="#q68">68</a><a href="#q69">69</a
+          ><a href="#q70">70</a><a href="#q71">71</a><a href="#q72">72</a
+          ><a href="#q73">73</a><a href="#q74">74</a><a href="#q75">75</a
+          ><a href="#q76">76</a><a href="#q77">77</a><a href="#q78">78</a
+          ><a href="#q79">79</a><a href="#q80">80</a><a href="#q81">81</a
+          ><a href="#q82">82</a><a href="#q83">83</a><a href="#q84">84</a
+          ><a href="#q85">85</a><a href="#q86">86</a><a href="#q87">87</a
+          ><a href="#q88">88</a><a href="#q89">89</a><a href="#q90">90</a
+          ><a href="#q91">91</a><a href="#q92">92</a><a href="#q93">93</a
+          ><a href="#q94">94</a><a href="#q95">95</a><a href="#q96">96</a
+          ><a href="#q97">97</a><a href="#q98">98</a><a href="#q99">99</a
+          ><a href="#q100">100</a><a href="#q101">101</a><a href="#q102">102</a
+          ><a href="#q103">103</a><a href="#q104">104</a><a href="#q105">105</a
+          ><a href="#q106">106</a><a href="#q107">107</a><a href="#q108">108</a
+          ><a href="#q109">109</a><a href="#q110">110</a><a href="#q111">111</a
+          ><a href="#q112">112</a><a href="#q113">113</a><a href="#q114">114</a
+          ><a href="#q115">115</a><a href="#q116">116</a><a href="#q117">117</a
+          ><a href="#q118">118</a><a href="#q119">119</a><a href="#q120">120</a
+          ><a href="#q121">121</a><a href="#q122">122</a><a href="#q123">123</a
+          ><a href="#q124">124</a><a href="#q125">125</a><a href="#q126">126</a
+          ><a href="#q127">127</a><a href="#q128">128</a><a href="#q129">129</a
+          ><a href="#q130">130</a><a href="#q131">131</a><a href="#q132">132</a
+          ><a href="#q133">133</a><a href="#q134">134</a><a href="#q135">135</a>
+        </div>
+      </header>
+      <main class="grid">
+        <section class="card" id="q1">
+          <div class="meta">Question 1</div>
+          <h2>
+            Alfred North Whitehead said the statement like &quot;Philosophy
+            begins in wonder. And, at the end, when philosophic thought has done
+            its best, the wonder remains&quot;. So, what kind of human feature
+            or characteristic he tried to show via philosophy science?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Curiosity and wonder as a basic human
+            feature of philosophical thinking.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p5.png"
+              alt="Lecture evidence for question 1"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DETERMINATION TROUGH QUOTES
+                AND QUESTIONS ✓“Philosophy begins in wonder. And, at the end,
+                when philosophic thought has done its best, the wonder remains.
+                ”(Alfred North Whitehead) ✓“Science is organized knowledge.
+                Wisdom is organized life. ” (Immanuel Kant, Critique of Pure
+                Reason) ✓“Science is the great antidote/противоядие to the
+                poiso...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q2">
+          <div class="meta">Question 2</div>
+          <h2>
+            What did Adam Smith mean saying that “Science is the great antidote
+            to the poison of enthusiasm superstition”?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Science protects people from superstition
+            and blind enthusiasm by giving rational, evidence-based knowledge.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p5.png"
+              alt="Lecture evidence for question 2"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DETERMINATION TROUGH QUOTES
+                AND QUESTIONS ✓“Philosophy begins in wonder. And, at the end,
+                when philosophic thought has done its best, the wonder remains.
+                ”(Alfred North Whitehead) ✓“Science is organized knowledge.
+                Wisdom is organized life. ” (Immanuel Kant, Critique of Pure
+                Reason) ✓“Science is the great antidote/противоядие to the
+                poiso...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q3">
+          <div class="meta">Question 3</div>
+          <h2>
+            Which branch of philosophy studies existence, its principles, bases,
+            categories, as well as matter and the material world?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Ontology.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p2.png"
+              alt="Lecture evidence for question 3"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                2
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CONTENT ✔ Ontology as a
+                science (science about being –material thing, matter – meaning
+                or making sense, existence -reality) ✔ Problem of existence,
+                material and matter ✔ Matter, its types and properties ✔
+                Categories of ontology ✔ Monism, dualism and pluralism as a
+                direction of ontological understanding Syllabus T opic (Lecture
+                2) Main Ph...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q4">
+          <div class="meta">Question 4</div>
+          <h2>
+            Which branch of philosophy studies cognition, the cognitive
+            problems, its opportunity, relation between knowledge and reality,
+            achievement of truth, to reveal facts?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Epistemology.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p9.png"
+              alt="Lecture evidence for question 4"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                9
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY SECTION ✓
+                Ontology – study of existence, its principles , base and
+                category ✓ Epistemology – study of cognition, cognitive problems
+                , its opportunity, relation between knowledge and reality,
+                achievement of truth, to reveal facts. ✓ Axiology – study of
+                values, its social, political and moral context ✓ Social
+                philosophy – study ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q5">
+          <div class="meta">Question 5</div>
+          <h2>
+            What is the correct order for the main concepts of philosophy among
+            offered below?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Category -&gt; Law -&gt; Principle -&gt;
+            Genesis -&gt; Definition.
+          </p>
+          <p class="note">
+            The lecture also shows a wider list of concepts, but this is the
+            ordered core list defined in Lecture 1.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 5"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q6">
+          <div class="meta">Question 6</div>
+          <h2>
+            Which school of Ancient Greek philosophy taught that everything in
+            the world began from basic elements like water, air, fire, or the
+            Apeiron-small particles (infinite or boundless)?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> The Miletus school.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p27.png"
+              alt="Lecture evidence for question 6"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                27
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SCHOOL OF ANCIENT GREECE
+                ✓Miletus (Thales, Anaximenes, Anaximander,Heraclitus) - for the
+                first time created the doctrine of the beginning of all things,
+                meaning water,air,fire, and Apeiron-small particles. ✓Elea
+                (Xenophanes, Parmenides, Zeno) - the first in ancient philosophy
+                have begun to use such concepts as being, nothingness, the
+                mov...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q7">
+          <div class="meta">Question 7</div>
+          <h2>
+            What word best expresses the main idea of the philo sophy of life,
+            based on the understanding of life and death?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> The meaning of life.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p2.png"
+              alt="Lecture evidence for question 7"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                2
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CONTENT ✔ Philosophy of Life
+                and death. Meaning of Life. Understanding Death meaning via of
+                Nirvana or “Divine Comedy” Dante. ✔ Philosophy of Renaissance
+                culture and Reformation: ideas, inventions,reforms, innovations,
+                humanism. Syllabus T opic (Lecture 5) Main Philosophy of Life
+                and death Additional Philosophy of Renaissance culture and...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q8">
+          <div class="meta">Question 8</div>
+          <h2>
+            Which Renaissance philosopher believed that &#x27;the people are a
+            capricious and stupid beast (animals)&#x27; and therefore should be
+            governed by leaders, and also wrote the book City of the Sun?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Tommaso Campanella.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p26.png"
+              alt="Lecture evidence for question 8"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                26
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THE SOCIAL PHILOSOPHY OF THE
+                RENAISSANCE • T ommasoCampanella - &quot;City of the Sun” Thesis
+                marks: “Man lives in a double world: according to the mind he is
+                contained by no physical space and by no walls, but at the same
+                time he is in heaven and on earth, in Italy,in France, in
+                America, wherever the mind&#x27;s thrust penetrates and extends
+                by u...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q9">
+          <div class="meta">Question 9</div>
+          <h2>
+            Which method of thinking or cognition is reflected in the Russian
+            proverb &#x27;Measure seven times, cut once&#x27;?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Logical and deliberate thinking.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p30.png"
+              alt="Lecture evidence for question 9"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> STAGES AND T YPES OF
+                COGNITION Piaget&#x27;s theory of cognitive development Sensori
+                motor stage Infancy (0–2 years) Intelligence is present; motor
+                activity but no symbols; knowledge is developing yet limited;
+                knowledge is based on experiences/ interactions; mobility allows
+                child to learn new things; some language skills are developed at
+                the ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q10">
+          <div class="meta">Question 10</div>
+          <h2>
+            Which philosopher of the Modern time philosophy promoted the theory
+            of dualism and the method of reasonable doubt?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Rene Descartes.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p19.png"
+              alt="Lecture evidence for question 10"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                19
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> RENE DESCARTES’S STATEMENTS
+                ➢ The main aims of Descartes’ Meditations are, 1st, to build a
+                secure foundation for knowledge and in particular for his
+                physics and, 2nd, to show that this physics is compatible with
+                the two main claims of religion, namely, the existence of God
+                and the soul. ➢ The method of doubt: knowledge must be based on
+                c...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q11">
+          <div class="meta">Question 11</div>
+          <h2>
+            Which Modern time philosopher denied the existence of material
+            substance and claimed that only minds and their ideas are all that
+            exist?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> George Berkeley.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p21.png"
+              alt="Lecture evidence for question 11"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                21
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> GEORGE BERKELEY’S STATEMENTS
+                ➢ Berkley views Locke’s philosophy as skeptical and atheistic;
+                he overcomes these two faults, dramatically, by denying the
+                existence of material substance. Minds and their ideas are all
+                that exist. Our ideas of sense perception are not caused by
+                material objects that lie behind a veil of perception, but
+                direc...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q12">
+          <div class="meta">Question 12</div>
+          <h2>
+            Which philosopher of the Modern time philosophy replaced rational
+            justification with a naturalistic explanation, aiming to shift
+            philosophy from rationalism to naturalism?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> David Hume.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p23.png"
+              alt="Lecture evidence for question 12"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                23
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DAVID HUME’S STATEMENTS ➢
+                There are two general aspects to Hume’s philosophy: 1) First, he
+                is an epistemological skeptic. Hume accepts the Empiricist
+                principles inherent in Locke and Berkeley, and follows them to
+                their logical conclusion: skepticism, especially with regard to
+                the notions of cause, objects, and self. 2) Second, he
+                provide...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q13">
+          <div class="meta">Question 13</div>
+          <h2>
+            Which historical period in the philosophy of science is associated
+            with promoting literacy and the spread of knowledge?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> The Enlightenment period.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p26.png"
+              alt="Lecture evidence for question 13"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 26
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF SCIENCE
+                Philosophy of science (stages) Ancient – Fundamental base,
+                problems and understanding Middle age – Concepts and books
+                Renaissance – Ideas and inventions Modern – Facts and
+                observation, Science itself , Research Enlightenment –
+                Enlighten, prosperity, literacy, education, and literacy
+                eradication 20 century –T echnolo...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q14">
+          <div class="meta">Question 14</div>
+          <h2>
+            Baruch de Spinoza suggested that the human mind becomes more
+            intelligent or perfect through increased activity and depends on a
+            wider range of things that a person comes in contact, i.e., as more
+            active and much traveled man. Which method or approach in cognitive
+            philosophy or cognitive science aligns with this idea?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Empirical or experiential cognition through
+            activity and contact with the world.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p29.png"
+              alt="Lecture evidence for question 14"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SPINOZA IDEAS OF MODERN AND
+                ENLIGHTENMENT TIME Spinoza: ▪ Three infinite substance (God,
+                perfect (ideals) and material things) were combined into one. ▪
+                His main thought is: “Human mind is more intelligent as more he
+                active and travel. Or Thinking of human is more perfect and it
+                is depend on a wider range of things that a person comes in...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q15">
+          <div class="meta">Question 15</div>
+          <h2>
+            Which Enlightenment philosopher offered an analysis of propositions,
+            such as the example stating that while it is a contradiction to deny
+            the essential truth that Adam was the first man, it is not a
+            contradiction to deny that Adam ever existed?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Gottfried Leibniz.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p30.png"
+              alt="Lecture evidence for question 15"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> GOTTFRIED LEIBNIZ’S
+                STATEMENTS ➢ Leibniz argues that the universe consist in an
+                infinite number of mindlike, nonmaterial, and independent
+                monads, one of which is God. This conclusion is derived from his
+                views of the proposition, truth, and substance. These views
+                imply that space and time and all relation are unreal. They also
+                imply that ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q16">
+          <div class="meta">Question 16</div>
+          <h2>
+            What are the key elements or requiremen ts of Blaise Pascal&#x27;s
+            method of mechanical rationalism?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> The &#x27;heart argument&#x27; and the
+            &#x27;brain argument&#x27;.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p33.png"
+              alt="Lecture evidence for question 16"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                33
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                ENLIGHTENMENT TIME Pascal:  Concepts of pressure and vacuum,
+                study fluids  Method of mechanical rationalism, specifying
+                “heart argument” and “brain argument”  Invented mechanical
+                calculator  Made contribution to projective geometry and
+                through it to the theory of probability  His main thought is:
+                “Nature ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q17">
+          <div class="meta">Question 17</div>
+          <h2>Who was the inventor of the first mechanical calculator?</h2>
+          <p class="answer"><strong>Answer:</strong> Blaise Pascal.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p33.png"
+              alt="Lecture evidence for question 17"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                33
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                ENLIGHTENMENT TIME Pascal:  Concepts of pressure and vacuum,
+                study fluids  Method of mechanical rationalism, specifying
+                “heart argument” and “brain argument”  Invented mechanical
+                calculator  Made contribution to projective geometry and
+                through it to the theory of probability  His main thought is:
+                “Nature ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q18">
+          <div class="meta">Question 18</div>
+          <h2>
+            Which Enlightenment philosopher developed a philosophical vocabulary
+            and supported the monarchy, asserting that society should be divid
+            ed by the educated and the rich and those who has nothing and is
+            obliged to work for educated and rich and that if people begin to
+            think and argue all died?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Voltaire.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p34.png"
+              alt="Lecture evidence for question 18"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                34
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                ENLIGHTENMENT TIME Voltaire: ▪ Was a fighter against idealism
+                and religion, based on the scientific achievements ▪ Advocated
+                natural rights: liberty, property, security and equality. Also
+                proposed: freedom of religion, freedom of expression, and
+                separation of church and state. ▪ Criticism of religion and
+                criti...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q19">
+          <div class="meta">Question 19</div>
+          <h2>
+            Which Enlightenment philosopher identified two types of governmental
+            power — sovereign and admin istrative—and proposed dividing
+            administrative power into three branches: legislative, executive,
+            and judicial?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Charles-Louis de Montesquieu.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p37.png"
+              alt="Lecture evidence for question 19"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                37
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                ENLIGHTENMENT TIME Charles-Louis de Montesquieu was a French
+                lawyer, man of letters, and political philosopher who lived
+                during the Age of Enlightenment. He is famous for his
+                articulation of the theory of separation of powers, which is
+                implemented in many constitutions throughout the world. He did
+                more than an...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q20">
+          <div class="meta">Question 20</div>
+          <h2>
+            What is defined as a complex society marked by the emergence of the
+            state, social stratification, urbanization, and symbolic systems of
+            comm unication that go beyond spoken or signed language?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Civilization.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p5.png"
+              alt="Lecture evidence for question 20"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Philosophy of human,
+                humanity, civilization. Humanism. A Civilization (also spelled
+                civilisation in British English) is any complex society
+                characterized by the development of the state, social
+                stratification, urbanization, and symbolic systems of
+                communication beyond signed or spoken languages (namely, writing
+                systems)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q21">
+          <div class="meta">Question 21</div>
+          <h2>
+            According to Kant&#x27;s philosophy, what are the main components or
+            faculties of the human mind (brain)?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Sensation (sensible intuition) and
+            understanding (concepts).
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p17.png"
+              alt="Lecture evidence for question 21"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF IMMANUEL KANT
+                I. Kant explained the role of cognition through cognitive
+                problem. Kant reject both the Rationalist and Empiricist
+                traditions because they share certain fundamental assumption.
+                First, they assume that there is only one source of knowledge:
+                either sense experience or reason. In contrast, Kant argues that
+                sensat...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q22">
+          <div class="meta">Question 22</div>
+          <h2>
+            Which aspect of cognitive study relates to the idea that the world
+            exists independently of human consciousness—a concept that
+            influenced Kant&#x27;s doctrine of &quot;things in itself&quot; or
+            &#x27;things-in-themselves&#x27;?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Pure reason.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p22.png"
+              alt="Lecture evidence for question 22"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                22
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF IMMANUEL KANT
+                Kant wrote “General natural history and world view”. In this
+                work he proposed: ➢ study of relative calm to movement ➢
+                emergence and destruction of matter (existence) ➢ pure reason –
+                study of cognition that world exist independently from human
+                consciousness, by this has developed a doctrine of &quot;things
+                in itself...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q23">
+          <div class="meta">Question 23</div>
+          <h2>
+            Who said the following statement &quot;What is real is rational–
+            what is rational is real”?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Georg Wilhelm Friedrich Hegel.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p23.png"
+              alt="Lecture evidence for question 23"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                23
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF GEORG WILHELM
+                FRIEDRICH HEGEL ▪ G. Hegel was greatly influenced by I. Kant,
+                however sought to go one step further than Kant and effect a
+                complete synthesis that would not only draw together competing
+                epistemologies but would also show the connection between
+                epistemology and metaphysics. The key to this synthesis is the
+                reco...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q24">
+          <div class="meta">Question 24</div>
+          <h2>
+            In an interview, Ronaldo mentions that he trains five times a week
+            for 3 –4 hours, not including his home fitness routine on weekends.
+            Which principles or laws of classical German philosophy correspond
+            to the discipline and self -regulation reflected in this statement?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Practical reason expressed through
+            self-discipline and self-regulation.
+          </p>
+          <p class="note">
+            This question is interpretive, so the answer is stated in the
+            Kantian sense used in the lecture.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p4.png"
+              alt="Lecture evidence for question 24"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                4
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PROJECT DEFENSE TEAM
+                SCHEDULE (20 -P) WEEK DAY PARTICIPANT 8 WEEK 10TH of March
+                Abzalkyzy Aruzhan 8 WEEK 10TH of March Kurbanali Uldanay 9 WEEK
+                17TH of March Aibergen Azamat 9 WEEK 17TH of March
+                KydyraliYerkin
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q25">
+          <div class="meta">Question 25</div>
+          <h2>
+            Which law or principle of German clas sical philosophy aligns with
+            the so -called &#x27;boomerang law,&#x27; which suggests that a
+            person&#x27;s life, behavior, and actions can serve as an example
+            and eventually return to influence them?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> The categorical imperative.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p22.png"
+              alt="Lecture evidence for question 25"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                22
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF IMMANUEL KANT
+                Kant wrote “General natural history and world view”. In this
+                work he proposed: ➢ study of relative calm to movement ➢
+                emergence and destruction of matter (existence) ➢ pure reason –
+                study of cognition that world exist independently from human
+                consciousness, by this has developed a doctrine of &quot;things
+                in itself...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q26">
+          <div class="meta">Question 26</div>
+          <h2>
+            Who among Kazakh philosophers decided to fight against the
+            inevitable death?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Korkyt Ata.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p4.png"
+              alt="Lecture evidence for question 26"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                4
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF
+                KORKYT ATA • Legend has it that Korkyt could not come to terms
+                with the transience of human life from a young age, so he
+                decided to fight against the inevitable death. T ormented by his
+                thoughts and driven by the dream of immortality, Korkyt leaves
+                people, but everywhere and everywhere he sees death: in the
+                forest,...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q27">
+          <div class="meta">Question 27</div>
+          <h2>Which branch of philosophy focuses on the study of values?</h2>
+          <p class="answer"><strong>Answer:</strong> Axiology.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p45.png"
+              alt="Lecture evidence for question 27"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                45
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THEORIES OF VALUES  Max
+                Ferdinand Scheler - personality ontologism or Material
+                value-ethics  Additionally, values are not formal realities;
+                they do not exist somewhere apart from the world and their
+                bearers, and they only exist with a value-bearer (знаменосец),
+                as a value-being. They are, therefore, part of the realm of a
+                material a pr...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q28">
+          <div class="meta">Question 28</div>
+          <h2>Who among Kazakh philosopher advocated for secular education?</h2>
+          <p class="answer"><strong>Answer:</strong> Ibrai Altynsarin.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p12.png"
+              alt="Lecture evidence for question 28"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THE PHILOSOPHY OF
+                ENLIGHTENMENT AND THE HUMANISTIC ESSENCE OF I. ALTYNSARIN WORKS
+                . Ibrai Altynsarin (1841-1889) was a Kazakh
+                educator,writer,folklorist, public figure, and ethnographer. He
+                is the author of Kazakh textbooks: &quot;Kazakh Anthology&quot;
+                (1879; 2nd ed., 1906) and &quot;The Initial guide to teaching
+                Kazakhs the Russian language&quot; (1879), ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q29">
+          <div class="meta">Question 29</div>
+          <h2>
+            There are four stages of cognition or the cognitive process. Which
+            of these stages are used by infants during their early days or
+            months before they turn one year old?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> The sensorimotor stage.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p30.png"
+              alt="Lecture evidence for question 29"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> STAGES AND T YPES OF
+                COGNITION Piaget&#x27;s theory of cognitive development Sensori
+                motor stage Infancy (0–2 years) Intelligence is present; motor
+                activity but no symbols; knowledge is developing yet limited;
+                knowledge is based on experiences/ interactions; mobility allows
+                child to learn new things; some language skills are developed at
+                the ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q30">
+          <div class="meta">Question 30</div>
+          <h2>
+            How can the opening of America as a country or territory be
+            described in terms of the cognitive process? Which type of cognitive
+            process does it represent?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Discovery or opening.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p26.png"
+              alt="Lecture evidence for question 30"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                26
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> NOTION OF COGNITION, ITS T
+                YPES AND FUNCTION S IN PHILOSOPHY, ITS ROLE IN EPISTEMOLOGI CAL
+                CONCEPT ▪ &quot;Cognition&quot; is a word that dates back to the
+                15th century when it meant &quot;thinking and awareness&quot;.
+                Attention to the cognitive process came about more than
+                twenty-three centuries ago, beginning with Aristotle and his
+                interest in the inner w...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q31">
+          <div class="meta">Question 31</div>
+          <h2>
+            What is the meaning of the word &#x27;Philosophy&#x27; literally?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Love of wisdom.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p7.png"
+              alt="Lecture evidence for question 31"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DETERMINATION ✓ Philosophy
+                from Greek is love to wisdom. ✓ Philosophy is a science of
+                principles of existence, cognition and human relation to the
+                world in definitions, category and law. ✓ Philosophy of science
+                is concerned with all the assumptions, foundations, methods,
+                implications of science, and with the use and merit of science.
+                ✓ (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q32">
+          <div class="meta">Question 32</div>
+          <h2>What is the main focus or subject of study in philosophy?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> The principles of existence, cognition, and
+            the human relation to the world.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p18.png"
+              alt="Lecture evidence for question 32"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                18
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SUBJECT AND OBJECT OF
+                COGNITION • Subject of cognition (Under the subject of cognition
+                should be understood endowed with human consciousness included
+                in the system of social and cultural ties, whose activity is
+                aimed at understanding the mysteries of the opposing object). •
+                Object of cognition (Philosophical category denoting a thing, a
+                ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q33">
+          <div class="meta">Question 33</div>
+          <h2>
+            What category of belief do documents like laws, rules, and
+            constitutions belong to?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Theoretical knowledge.</p>
+          <p class="note">
+            The exam mentions written normative documents; the lecture framework
+            places them closer to conceptual and theoretical knowledge.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p17.png"
+              alt="Lecture evidence for question 33"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CORREL ATION BET WEEN
+                KNOWLEDGE, BELIEF AND INFORMATION • What is relation knowledge,
+                belief and information? • Types of belief by Kant: - pragmatic
+                belief, - doctrine belief, - moral belief • Pragmatic belief –
+                rightness (correctness, fairness, justice, honesty) in one case
+                or event • Doctrine belief – to standard, general rules •
+                Moral...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q34">
+          <div class="meta">Question 34</div>
+          <h2>
+            From the perspective of epistemology and the thinking process, what
+            relates to the Essence of a science fiction (sci-fi) book?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Concept or idea.</p>
+          <p class="note">
+            A sci-fi book&#x27;s essence belongs more to the level of concept
+            than to a physical object.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p13.png"
+              alt="Lecture evidence for question 34"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                13
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CONTENT ❑ Epistemology is a
+                science of cognitive process ❑ Epistemology theory, types of
+                cognition. Correlation between knowledge, belief and
+                information. Subject and object of cognition. Cognition,
+                practices and experience. Sensitive, empirical and theoretical
+                knowledge. Thinking: essence and forms ❑ Axiology is a science
+                about culture ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q35">
+          <div class="meta">Question 35</div>
+          <h2>What is not related to the form of thinking?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> A type of thinking such as practical
+            thinking is not a form of thinking.
+          </p>
+          <p class="note">
+            The lecture says the forms are concept, judgment, and reasoning.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p30.png"
+              alt="Lecture evidence for question 35"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> STAGES AND T YPES OF
+                COGNITION Piaget&#x27;s theory of cognitive development Sensori
+                motor stage Infancy (0–2 years) Intelligence is present; motor
+                activity but no symbols; knowledge is developing yet limited;
+                knowledge is based on experiences/ interactions; mobility allows
+                child to learn new things; some language skills are developed at
+                the ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q36">
+          <div class="meta">Question 36</div>
+          <h2>What concept corresponds to the word of Eureka?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Wit or sudden creative insight.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture15_April26-p2.png"
+              alt="Lecture evidence for question 36"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture15_April26 / page
+                2
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CONTENT Number of issues
+                Outline of issues 1 Futurology as a concept 2 The founders of
+                the concept of “evolution of systems and post-industrial
+                society” 3 The essence of the concept of the inevitability of a
+                &quot;global catastrophe&quot; 4 Global problems of humanity
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q37">
+          <div class="meta">Question 37</div>
+          <h2>
+            Which cognitive method begins with the formulation of a hypothesis
+            or statement?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Deduction.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p24.png"
+              alt="Lecture evidence for question 37"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF INDUCTION AND
+                DEDUCTION RESULT, SOLUTION  Task: I give you 100 keys to open
+                only one door in H building of SDU, what will you do and How??
+                Induction is a method of reasoning from the particular to the
+                general. Deduction is a method of reasoning from the general to
+                the specific/particular (method of reasoning in which the
+                tota...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q38">
+          <div class="meta">Question 38</div>
+          <h2>
+            To obtain a persist ent aroma of mountain flowers in perfume, a
+            young chemist scientist spent many hours in the laboratory selecting
+            different compounds of mountain flowers. He couldn&#x27;t predict
+            how the flowers would unfold into compounds, so he tried different
+            formulas over a nd over again. As a result, he managed to achieve
+            the desired scent (aroma/smell) of mountain flowers together. What
+            method of cognition did the young scientist use?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Trial-and-error empirical method.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p23.png"
+              alt="Lecture evidence for question 38"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                23
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF COGNITION •
+                Method - a system of regulatory principles transformative,
+                practical or cognitive, theoretical activities. •
+                Methodology-method-methods (technique) • Types: comparison,
+                synthesis, idealization, generalization, restriction,
+                abstraction, modeling, analogy, formalization and
+                induction/deduction
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q39">
+          <div class="meta">Question 39</div>
+          <h2>
+            Which philosopher-epistemologist held the belief that &#x27;Every
+            event must have a cause&#x27;?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Immanuel Kant.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p17.png"
+              alt="Lecture evidence for question 39"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CORREL ATION BET WEEN
+                KNOWLEDGE, BELIEF AND INFORMATION • What is relation knowledge,
+                belief and information? • Types of belief by Kant: - pragmatic
+                belief, - doctrine belief, - moral belief • Pragmatic belief –
+                rightness (correctness, fairness, justice, honesty) in one case
+                or event • Doctrine belief – to standard, general rules •
+                Moral...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q40">
+          <div class="meta">Question 40</div>
+          <h2>
+            According to Georg Hegel, what is the sequence or order of stages in
+            the cognitive learning process?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Sensation -&gt; perception -&gt;
+            imagination -&gt; thinking.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p23.png"
+              alt="Lecture evidence for question 40"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                23
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF GEORG WILHELM
+                FRIEDRICH HEGEL ▪ G. Hegel was greatly influenced by I. Kant,
+                however sought to go one step further than Kant and effect a
+                complete synthesis that would not only draw together competing
+                epistemologies but would also show the connection between
+                epistemology and metaphysics. The key to this synthesis is the
+                reco...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q41">
+          <div class="meta">Question 41</div>
+          <h2>
+            What is considered as a philosophical category that identifying as a
+            relationship between thought and reality, significant for people.
+            The signifi cance is not determined by a property of an object or
+            phenomenon, but by their involvement in the life of a person with a
+            positive reaction for a person in the form of ratings/assessment?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Value.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p38.png"
+              alt="Lecture evidence for question 41"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                38
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> VALUE AS A PHILOSOPHICAL
+                CATEGORY • Value – is a philosophical category that identifying
+                as a relationship between thought and reality,significant for
+                people. The significance is not determined by a property of an
+                object or phenomenon, but by their involvement in the life of a
+                person with a positive reaction for a person in the form of r...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q42">
+          <div class="meta">Question 42</div>
+          <h2>
+            Which philosopher claimed that the ontological nature of existen ce
+            is one, unchanging, fixed, and intelligible?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Parmenides.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p4.png"
+              alt="Lecture evidence for question 42"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                4
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PROBLEM OF EXISTENCE,
+                MATERIAL AND MATTER • The problem of existence. Characteristic
+                of being Parmenides - being one, unchanging, fixed,
+                intelligible. Characteristic of being by Aristotle - being has
+                different levels: matter,plants, animals and people.
+                Characteristic of being a religious philosophy - the existence
+                of God and the nature o...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q43">
+          <div class="meta">Question 43</div>
+          <h2>What can be considered as an attribute for the smartphone?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> An attribute can be any essential property
+            of a smartphone, for example its color, size, or memory.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p6.png"
+              alt="Lecture evidence for question 43"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                6
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CATEGORIES OF ONTOLOGY •
+                Category of ontology: Genesis is a philosophical category
+                denoting the reality objectively existing outside and
+                independent of human consciousness. Essence is the internal
+                unity of the manifold things existing through them. An accident
+                - it is a random, insignificant in the objects or phenomena.
+                Modus is a proper...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q44">
+          <div class="meta">Question 44</div>
+          <h2>
+            Which ancient civilization (country from Ancient Philosophy)
+            officially embraced the concepts of liberation from suffering
+            through overcoming karma and attaining nirvana?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Ancient India.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p11.png"
+              alt="Lecture evidence for question 44"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FEATURES OF PHILOSOPHY IN
+                THE ANCIENT WORLD • Cosmo centrism - the general principle of
+                the philosophy of the ancient world, which was organically
+                linked with the recognition of the crucial (huge) role of space
+                in the earth life and society. • The peculiarity of the ancient
+                Indian philosophy - the recognition of absolute being (matter,
+                e...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q45">
+          <div class="meta">Question 45</div>
+          <h2>
+            Which branch or school of ancient philosophy focused on the right to
+            education through the assimilation of rituals, ceremonies, courtesy,
+            and respect?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Confucianism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p24.png"
+              alt="Lecture evidence for question 45"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FEATURES OF ANCIENT CHINESE
+                PHILOSOPHY ✓T aoism- the life of nature and people flows along a
+                certain path. T ao- own way, which is achievable only if the
+                person purity of thought, humility and compassion, as well as
+                non-interference, do not abuse the nature of things.
+                ✓Confucianism - rights of every human life determines the heaven
+                (Sky)...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q46">
+          <div class="meta">Question 46</div>
+          <h2>
+            Which branch or stage of ancient philosophy was shaped by the influ
+            ence of mythology and the early development of science?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Ancient philosophy, especially its early
+            natural-philosophical stage.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p30.png"
+              alt="Lecture evidence for question 46"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> STAGES AND T YPES OF
+                COGNITION Piaget&#x27;s theory of cognitive development Sensori
+                motor stage Infancy (0–2 years) Intelligence is present; motor
+                activity but no symbols; knowledge is developing yet limited;
+                knowledge is based on experiences/ interactions; mobility allows
+                child to learn new things; some language skills are developed at
+                the ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q47">
+          <div class="meta">Question 47</div>
+          <h2>
+            Which fundamental concept in ancient philosophy advocated for and
+            described the ascetic way of life?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Jainism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p17.png"
+              alt="Lecture evidence for question 47"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> UNORTHODOX SCHOOLS OF
+                ANCIENT INDIA • Jainism preaches the avoidance of harm to all
+                living beings in this world. The philosophy and practice of
+                Jainism is based, primarily, on the cultivation of the soul to
+                achieve omniscience, omnipotence and eternal bliss. Every soul
+                has overcome the corporeal shell left over from previous lives,
+                and r...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q48">
+          <div class="meta">Question 48</div>
+          <h2>
+            Which fundamental concept holds that the rights of every human life
+            are determined by a heaven?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Confucianism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p24.png"
+              alt="Lecture evidence for question 48"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FEATURES OF ANCIENT CHINESE
+                PHILOSOPHY ✓T aoism- the life of nature and people flows along a
+                certain path. T ao- own way, which is achievable only if the
+                person purity of thought, humility and compassion, as well as
+                non-interference, do not abuse the nature of things.
+                ✓Confucianism - rights of every human life determines the heaven
+                (Sky)...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q49">
+          <div class="meta">Question 49</div>
+          <h2>
+            Which school of Ancient Greece taught that the origin of all things
+            is numbers?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> The Pythagorean school.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p27.png"
+              alt="Lecture evidence for question 49"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                27
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SCHOOL OF ANCIENT GREECE
+                ✓Miletus (Thales, Anaximenes, Anaximander,Heraclitus) - for the
+                first time created the doctrine of the beginning of all things,
+                meaning water,air,fire, and Apeiron-small particles. ✓Elea
+                (Xenophanes, Parmenides, Zeno) - the first in ancient philosophy
+                have begun to use such concepts as being, nothingness, the
+                mov...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q50">
+          <div class="meta">Question 50</div>
+          <h2>
+            Which Ancient Greek philosopher claimed that ideas or paradigms come
+            first, and the physical world is secondary?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Plato.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p29.png"
+              alt="Lecture evidence for question 50"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> S OC R ATES , P L ATO, AR I
+                S TOTLE Socrates, &quot;I know that I know nothing. Know
+                yourself&quot;. Compares method of philosophizing with art,
+                arguing that helping to the birth of truth. Unfairly he was
+                accused of blasphemy and sentenced to death, but bravely
+                accepted death after drinking a cup of poison Plato, the ancient
+                founder of idealism, a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q51">
+          <div class="meta">Question 51</div>
+          <h2>
+            Which Medieval philosopher believed that there is one truth, but at
+            least two ways to achieve it: through philosophy and through
+            religion?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Ibn Rushd (Averroes).</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p38.png"
+              alt="Lecture evidence for question 51"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 38
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING REPRESENTATIVES
+                OF EASTERN PHILOSOPHY • Ibn Rushd (1126 - December 10, 1198,
+                Marrakech) - a famous Western- Arabic philosopher. In Western
+                Europe, he is known by the Latinized name of Averroes. Author of
+                works on logic, Aristotle and Islamic philosophy, theology,
+                religious law of school, geography, mathematics, physics,
+                astro...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q52">
+          <div class="meta">Question 52</div>
+          <h2>Which Medieval philosopher promoted the ideas of Sufism?</h2>
+          <p class="answer"><strong>Answer:</strong> Khoja Ahmed Yassawi.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p40.png"
+              alt="Lecture evidence for question 52"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 40
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING REPRESENTATIVES
+                OF EASTERN PHILOSOPHY • Khoja Ahmed Yassawi (1090-1166) –
+                recognized as the head of the Turkish branch of Sufism, a
+                significant part of life is connected with the city of Iasi
+                (Turkestan). Teachings of Sufis originated in the 6th century,
+                it rejected the ostentatious piety and hypocrisy, claimed that
+                knowledge...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q53">
+          <div class="meta">Question 53</div>
+          <h2>
+            Which Medieval philosopher wrote about politics, social structure,
+            and systems of governance in wo rks such as Civil Politics and The
+            Principles of the Opinions of the Citizens of the Virtuous City?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Al-Farabi.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p39.png"
+              alt="Lecture evidence for question 53"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 39
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING REPRESENTATIVES
+                OF EASTERN PHILOSOPHY • Al-Farabi (/ˌælfəˈrɑːbi/;
+                Persian:ابونصرمحمدبنمحمدفارابیAbū Naṣr Muḥammad ibn Muḥammad
+                Fārābī; ), known in the West as Alpharabius (c. 870 in Fārāb –
+                between 14 December, 950 and 12 January, 951 in Damascus), was a
+                renowned philosopher and jurist who wrote in areas of political
+                philosop...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q54">
+          <div class="meta">Question 54</div>
+          <h2>
+            Who examined the development of the Western education system in the
+            8th–9th centuries from the perspectives of nominalism and realism?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Scholasticism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p34.png"
+              alt="Lecture evidence for question 54"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 34
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DEVELOPMENT OF CHRISTIAN
+                PHILOSOPHY CAN BE DIVIDED INTO 2 PERIOD : • Patristics or
+                patrology is the study of the early Christian writers who are
+                designated Church Fathers. The names derive from the combined
+                forms of Latin pater and Greek patḗr(father). The period is
+                generally considered to run from the end of New Testament times
+                or end o...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q55">
+          <div class="meta">Question 55</div>
+          <h2>
+            What are keywords of the Philosophy of Life or Meaning of Life?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Aim, goal, dream, desire, future, and
+            needs.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture9_April26_(2)-p3.png"
+              alt="Lecture evidence for question 55"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture9_April26 (2) /
+                page 3
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Philosophy of West in XIX
+                century. The XIX century philosophy (additional topic of lecture
+                8 ) • The founders of the &quot;philosophy of life&quot; or
+                &quot;philosophy of will (voluntarism)“. A good representative
+                of the philosophy of life, as well as irrational philosophy is
+                Arthur Schopenhauer, the author of the book &quot;The World as
+                Will and Idea“. If ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q56">
+          <div class="meta">Question 56</div>
+          <h2>
+            What type of professions has highest life longevity according to the
+            Aleksey Sitnikov (psychologist) opinion?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Breeders of agricultural crops.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p3.png"
+              alt="Lecture evidence for question 56"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                3
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MEANING OF LIFE OR
+                PHILOSOPHY OF LIFE A IM GOAL DREAM DESIRE - I want FUTURE DEAL
+                NEEDS Psychological approach from Aleksey Sitnikov demonstrate
+                of Life longevity of breeder of agricultural crops
+                (селекционеры) – Future Imagination – Motivations
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q57">
+          <div class="meta">Question 57</div>
+          <h2>What is the basic principle of the Renaissance philosophy?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Humanism or anthropocentrism.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p8.png"
+              alt="Lecture evidence for question 57"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                8
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> I. Features of the
+                philosophy of the Renaissance period II. Outstanding humanists
+                of the Renaissance III. Natural philosophy of the Renaissance
+                IV. The social philosophy of the Renaissance Syllabus T
+                opic(Lecture 5) Additional Philosophy of Renaissance culture and
+                Reformation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q58">
+          <div class="meta">Question 58</div>
+          <h2>
+            What does not belong to the central principles of Renaissance
+            philosophy?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Theocentrism does not belong to the central
+            principles of Renaissance philosophy.
+          </p>
+          <p class="note">
+            This is an inferred answer because the original options are not
+            visible in the PDF.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p10.png"
+              alt="Lecture evidence for question 58"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                10
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FEATURES OF THE PHILOSOPHY
+                OF THE RENAISSANCE • The peculiarity of the philosophy of the
+                15th century - the restoration and adaptation of ancient
+                philosophy to the requirements of modern times • Feature of 16th
+                century philosophy - natural philosophy • The central principle
+                of the philosophy of the Renaissance - anthropocentrism that
+                dev...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q59">
+          <div class="meta">Question 59</div>
+          <h2>
+            Who did propose the idea of heliocentrism which says that the Sun is
+            the center of the universe?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Nicolaus Copernicus.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p11.png"
+              alt="Lecture evidence for question 59"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HUMANISM AND HELIOCENTRISM •
+                The essence of the philosophy of Humanism - the principle was
+                based on the belief to the infinite possibilities of man and his
+                capacity to improve states that man has the crown of nature, he
+                is in the center of the universe. • The essence of the concept
+                of heliocentrism - was proposed by Nicolaus Copernicus (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q60">
+          <div class="meta">Question 60</div>
+          <h2>
+            Who did propose the idea of the sovereignty of state in the
+            Renaissance time firstly?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Jean Bodin.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p28.png"
+              alt="Lecture evidence for question 60"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                28
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THE SOCIAL PHILOSOPHY OF THE
+                RENAISSANCE • Social Philosophy: Niccolo Machiavelli &quot;The
+                Prince&quot;, Thomas More &quot;Utopia&quot;, Tommaso Campanella
+                &quot;Sun City&quot;, Jean Bodin &quot;Six Books of the
+                Republic“-sovereignty of state, Michel Montaigne “Experience” –
+                human rights • Niccolo Machiavelli (1469-1527) - one of the
+                first in the Renaissance rejected the...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q61">
+          <div class="meta">Question 61</div>
+          <h2>
+            Who did propose firstly the idea of a strong secular state in the
+            Renaissance time?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Niccolo Machiavelli.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture14_April26-p5.png"
+              alt="Lecture evidence for question 61"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture14_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF FEAR • To
+                contemporary ears, the Hobbesian state is bound to sound a shade
+                too tyrannical -- despite the fact that its legitimacy rests on
+                voluntary submission to the will of the sovereign. Surely,there
+                needs to be some limit on the state’s ability to use the
+                instruments of fear to impress its will upon us. Otherwise, the
+                s...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q62">
+          <div class="meta">Question 62</div>
+          <h2>
+            What is suit to the statement sounds like “It is okay to live a life
+            others do not understand” in Philosophy of Life among points offered
+            below?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Authenticity and living one&#x27;s own life
+            independently of others&#x27; judgment.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture9_April26_(2)-p3.png"
+              alt="Lecture evidence for question 62"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture9_April26 (2) /
+                page 3
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Philosophy of West in XIX
+                century. The XIX century philosophy (additional topic of lecture
+                8 ) • The founders of the &quot;philosophy of life&quot; or
+                &quot;philosophy of will (voluntarism)“. A good representative
+                of the philosophy of life, as well as irrational philosophy is
+                Arthur Schopenhauer, the author of the book &quot;The World as
+                Will and Idea“. If ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q63">
+          <div class="meta">Question 63</div>
+          <h2>
+            What doctrine shows that t he essence of its philosophy is the
+            principle which was based on the belief to the infinite
+            possibilities of man and his capacity to improve states that man has
+            the crown of nature, he is in the center of the universe?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Humanism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p11.png"
+              alt="Lecture evidence for question 63"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HUMANISM AND HELIOCENTRISM •
+                The essence of the philosophy of Humanism - the principle was
+                based on the belief to the infinite possibilities of man and his
+                capacity to improve states that man has the crown of nature, he
+                is in the center of the universe. • The essence of the concept
+                of heliocentrism - was proposed by Nicolaus Copernicus (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q64">
+          <div class="meta">Question 64</div>
+          <h2>
+            What group is presenting Dante A lighieri with his work so -called
+            “Divine Comedy” among outstanding humanists of the Renaissance time?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Proto-humanism or the early humanists of
+            the Renaissance.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p8.png"
+              alt="Lecture evidence for question 64"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                8
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> I. Features of the
+                philosophy of the Renaissance period II. Outstanding humanists
+                of the Renaissance III. Natural philosophy of the Renaissance
+                IV. The social philosophy of the Renaissance Syllabus T
+                opic(Lecture 5) Additional Philosophy of Renaissance culture and
+                Reformation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q65">
+          <div class="meta">Question 65</div>
+          <h2>
+            What is the central principle of modern philosophy or philosophy of
+            new time?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Scientific centrism.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p10.png"
+              alt="Lecture evidence for question 65"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                10
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Western European philosophy
+                of “New time” or Modern Philosophy (additional of topic 6) I.
+                The central principle of modern philosophy - scientific centrism
+                II. Scientific contributions of Newton - formulation of the
+                basic laws of mechanics, including the law of gravity III.
+                Scientific contributions of Boyle - development of the concept
+                of...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q66">
+          <div class="meta">Question 66</div>
+          <h2>
+            Who came up with the basic laws of mechanics in the modern period of
+            philosophy?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Isaac Newton.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p29.png"
+              alt="Lecture evidence for question 66"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Main Features Of Classical
+                Theories K. Marx and M. Weber compared Broadly Marxist Ideas
+                Broadly Weberian Ideas The main dynamic of modern development is
+                the expansion of capitalistic economic mechanism. The main
+                dynamic of modern development is the rationalization of
+                production. Modern societies are riven with class inequalities,
+                which a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q67">
+          <div class="meta">Question 67</div>
+          <h2>
+            Who came up with the idea of a chemical element in modern times of
+            philosophy?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Robert Boyle.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p29.png"
+              alt="Lecture evidence for question 67"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Main Features Of Classical
+                Theories K. Marx and M. Weber compared Broadly Marxist Ideas
+                Broadly Weberian Ideas The main dynamic of modern development is
+                the expansion of capitalistic economic mechanism. The main
+                dynamic of modern development is the rationalization of
+                production. Modern societies are riven with class inequalities,
+                which a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q68">
+          <div class="meta">Question 68</div>
+          <h2>
+            Who discovered the human circulatory system during the modern times
+            of philosophy?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> William Harvey.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p29.png"
+              alt="Lecture evidence for question 68"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Main Features Of Classical
+                Theories K. Marx and M. Weber compared Broadly Marxist Ideas
+                Broadly Weberian Ideas The main dynamic of modern development is
+                the expansion of capitalistic economic mechanism. The main
+                dynamic of modern development is the rationalization of
+                production. Modern societies are riven with class inequalities,
+                which a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q69">
+          <div class="meta">Question 69</div>
+          <h2>
+            Which philosopher of the modern philosophy promoted empirical
+            scientific methods such as induction and famously declared that
+            “Knowledge is power”?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Francis Bacon.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p29.png"
+              alt="Lecture evidence for question 69"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Main Features Of Classical
+                Theories K. Marx and M. Weber compared Broadly Marxist Ideas
+                Broadly Weberian Ideas The main dynamic of modern development is
+                the expansion of capitalistic economic mechanism. The main
+                dynamic of modern development is the rationalization of
+                production. Modern societies are riven with class inequalities,
+                which a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q70">
+          <div class="meta">Question 70</div>
+          <h2>
+            Who promoted the rational method in science, particularly deduction,
+            and authored the book “Discourse on Method” during the modern period
+            of philosophy?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Rene Descartes.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p11.png"
+              alt="Lecture evidence for question 70"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                MODERN TIME I. The founder of British empiricism and incomplete
+                induction method - Francis Bacon II. Author of theory of the
+                social contract and the book &quot;Leviathan&quot; - Thomas
+                Hobbes III. The founder of English sensationalism and the
+                concept of separation of powers - John Locke (principle of
+                nose-fist) IV. The ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q71">
+          <div class="meta">Question 71</div>
+          <h2>
+            What are the three branches into which philosophy is divided,
+            according to the views of Thomas Hobbes?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Nature of matter, human psychology, and
+            politics.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p15.png"
+              alt="Lecture evidence for question 71"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                15
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THOMAS HOBBE’S STATEMENTS ➢
+                The book of “Leviathan” which argue that preservation of peace
+                requires an absolute sovereign ➢ Hobbes’ main philosophical aim
+                is to show how politics should be regarded as a science similar
+                to mechanics. Politics is the most useful science, because it
+                can prevent war; peace requires a proper understanding of ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q72">
+          <div class="meta">Question 72</div>
+          <h2>
+            What is the best method of learning according Francis Bacon’s
+            thoughts?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Induction, moving from particular facts to
+            general conclusions.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p14.png"
+              alt="Lecture evidence for question 72"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                14
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FRANCIS BACON’S STATEMENTS ➢
+                Knowledge should be used to control nature for the benefit and
+                liberation of humanity ➢ Knowledge should be classified ➢
+                Proposed observation as the best methods of learning ➢ Humanism
+                is delicate style of learning that gives no serious business of
+                science ➢ Eliminative induction (observations) ➢ Hypothesis s...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q73">
+          <div class="meta">Question 73</div>
+          <h2>
+            According to Thomas Hobbes, what are the two main components of
+            psychological theory?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Sensation and motivation.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p16.png"
+              alt="Lecture evidence for question 73"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                16
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THOMAS HOBBE’S STATEMENTS ➢
+                The universe consists only of matter in motion, and causal
+                influence can be transmitted from one body to another only
+                through motion. All causation is mechanistic. ➢ So, each
+                materialistic things that exists is physical can be seen as a
+                consequence of his mechanistic view in causation. Anything
+                nonphysical wou...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q74">
+          <div class="meta">Question 74</div>
+          <h2>
+            Who believed that all our ideas come from experience and made this
+            the main point of his theory?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> John Locke.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p17.png"
+              alt="Lecture evidence for question 74"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> JOHN LOCKE’S STATEMENTS ➢
+                The center of his theory is that all ideas are derived from
+                experience. ➢ His theory of knowledge aims to avoid the extremes
+                of groundless speculation and universal skepticism, to clarify
+                the prospects of the new sciences, and to show how moral
+                knowledge is possible. ➢ All ideas come from sensation and
+                reflectio...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q75">
+          <div class="meta">Question 75</div>
+          <h2>
+            What corresponds to the central principle of Enlightenment
+            philosophy?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> To enlighten: to share knowledge and
+            promote literacy.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p27.png"
+              alt="Lecture evidence for question 75"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                27
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> CENTRAL PRINCIPLE OF
+                ENLIGHTENMENT PHILOSOPHY I. The central principle of
+                Enlightenment philosophy – TO ENLIGHTEN – TO SHARE KOWLEDGE TO
+                PROMOTE LITERACY
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q76">
+          <div class="meta">Question 76</div>
+          <h2>
+            Which Enlightenment thinker believed that the human mind becomes
+            more intell igent through activity and travel, expressing the idea
+            that thinking is perfected by exposure to a wider range of
+            experiences and contacts with the world?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Baruch de Spinoza.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p29.png"
+              alt="Lecture evidence for question 76"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SPINOZA IDEAS OF MODERN AND
+                ENLIGHTENMENT TIME Spinoza: ▪ Three infinite substance (God,
+                perfect (ideals) and material things) were combined into one. ▪
+                His main thought is: “Human mind is more intelligent as more he
+                active and travel. Or Thinking of human is more perfect and it
+                is depend on a wider range of things that a person comes in...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q77">
+          <div class="meta">Question 77</div>
+          <h2>Which option does not represent a natural right?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Anything that is not liberty, property,
+            security, or equality is not a natural right.
+          </p>
+          <p class="note">
+            The exact choice cannot be recovered because the options are not
+            present in the questions PDF.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p19.png"
+              alt="Lecture evidence for question 77"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                19
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FIVE COMMANDMENTS OF
+                BUDDHISM •1. I accept the right of scientists to abstain from
+                killing living beings. Do not kill 2. I accept the right of
+                scientists to abstain from taking what is not given to me. Do
+                not steal 3. I accept the right of scientists to refrain from
+                adultery Do not commit adultery 4. I accept the right of
+                scientists to r...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q78">
+          <div class="meta">Question 78</div>
+          <h2>
+            What are the three branches of government po wer that were
+            identified and separated by the French lawyer Charles-Louis de
+            Montesquieu?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Legislative, executive, and judicial.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p37.png"
+              alt="Lecture evidence for question 78"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                37
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                ENLIGHTENMENT TIME Charles-Louis de Montesquieu was a French
+                lawyer, man of letters, and political philosopher who lived
+                during the Age of Enlightenment. He is famous for his
+                articulation of the theory of separation of powers, which is
+                implemented in many constitutions throughout the world. He did
+                more than an...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q79">
+          <div class="meta">Question 79</div>
+          <h2>What does not fit with the main principles of humanism?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Theocentrism does not fit the main
+            principles of humanism.
+          </p>
+          <p class="note">
+            This is inferred from the lecture&#x27;s contrast between humanism
+            and theocentrism.
+          </p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p11.png"
+              alt="Lecture evidence for question 79"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HUMANISM AND HELIOCENTRISM •
+                The essence of the philosophy of Humanism - the principle was
+                based on the belief to the infinite possibilities of man and his
+                capacity to improve states that man has the crown of nature, he
+                is in the center of the universe. • The essence of the concept
+                of heliocentrism - was proposed by Nicolaus Copernicus (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q80">
+          <div class="meta">Question 80</div>
+          <h2>
+            What are the historical origins of humanism in terms of time and
+            location?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Renaissance Italy, mainly the 14th-16th
+            centuries.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture10_April26-p7.png"
+              alt="Lecture evidence for question 80"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture10_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HISTORICAL BACKGROUND OF
+                PHILOSOPHY OF L ANGUAGE • Medieval theories: Signification and
+                mental language The medieval thinkers disagreed as to whether
+                words signify things directly or only through concepts. The
+                latter view ran the danger of making concepts a screen between
+                language and reality, but it had the advantage of being able to
+                ex...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q81">
+          <div class="meta">Question 81</div>
+          <h2>
+            How is a complex society defined when it is characterized by the
+            development of the state, social stratification, urbanization, and
+            symbolic systems of communication beyond spoken or signed language?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Civilization.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p5.png"
+              alt="Lecture evidence for question 81"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> Philosophy of human,
+                humanity, civilization. Humanism. A Civilization (also spelled
+                civilisation in British English) is any complex society
+                characterized by the development of the state, social
+                stratification, urbanization, and symbolic systems of
+                communication beyond signed or spoken languages (namely, writing
+                systems)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q82">
+          <div class="meta">Question 82</div>
+          <h2>
+            Which of the given terms does not relate to the concept of the
+            &#x27;thing-in-itself&#x27;?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Phenomenon or appearance.
+          </p>
+          <p class="note">Kant contrasts the thing-in-itself with phenomena.</p>
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture10_April26-p7.png"
+              alt="Lecture evidence for question 82"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture10_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HISTORICAL BACKGROUND OF
+                PHILOSOPHY OF L ANGUAGE • Medieval theories: Signification and
+                mental language The medieval thinkers disagreed as to whether
+                words signify things directly or only through concepts. The
+                latter view ran the danger of making concepts a screen between
+                language and reality, but it had the advantage of being able to
+                ex...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q83">
+          <div class="meta">Question 83</div>
+          <h2>Who proposed the concept of the &#x27;thing-in-itself&#x27;?</h2>
+          <p class="answer"><strong>Answer:</strong> Immanuel Kant.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p7.png"
+              alt="Lecture evidence for question 83"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THING -IN-ITSELF German
+                philosophy XVIII – XIX centuries. Marxism philosophy within the
+                context of Soviet culture. (additional topic, lecture 7) • First
+                law of German philosophy is Thing-in-itself . In the Kantian
+                philosophy, the thing-in-itself (German: Ding an sich) is the
+                status of objects as they are, independent of representation
+                an...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q84">
+          <div class="meta">Question 84</div>
+          <h2>
+            In Lecture 7, you saw an image titled &#x27;Eyes Glance or
+            View,&#x27; where we discussed the concepts of subject, being, and
+            object. Which of these three terms is most closely related to the
+            internal understanding or perception of the
+            &#x27;thing-in-itself&#x27;?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Subject.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p18.png"
+              alt="Lecture evidence for question 84"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                18
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SUBJECT AND OBJECT OF
+                COGNITION • Subject of cognition (Under the subject of cognition
+                should be understood endowed with human consciousness included
+                in the system of social and cultural ties, whose activity is
+                aimed at understanding the mysteries of the opposing object). •
+                Object of cognition (Philosophical category denoting a thing, a
+                ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q85">
+          <div class="meta">Question 85</div>
+          <h2>
+            As we know, Immanuel Kant believed in certain fundamental
+            assumptions and argued that no event occurs without something
+            specific. According to him, what must every event have?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> A cause.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p17.png"
+              alt="Lecture evidence for question 85"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF IMMANUEL KANT
+                I. Kant explained the role of cognition through cognitive
+                problem. Kant reject both the Rationalist and Empiricist
+                traditions because they share certain fundamental assumption.
+                First, they assume that there is only one source of knowledge:
+                either sense experience or reason. In contrast, Kant argues that
+                sensat...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q86">
+          <div class="meta">Question 86</div>
+          <h2>
+            According to Imma nuel Kant&#x27;s philosophy, which question is
+            central to the issue of morality?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> &#x27;What should I do?&#x27;
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p18.png"
+              alt="Lecture evidence for question 86"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                18
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> KANT’S QUESTIONS  What do I
+                know? (metaphysics)  What should I do?(morality)  What am I
+                allowed to hope?(religion)  What is a man? (anthropology)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q87">
+          <div class="meta">Question 87</div>
+          <h2>
+            According to Immanuel Kant&#x27;s philosophy, which question is
+            central to the issue of metaphysics or cognitive process?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> &#x27;What do I know?&#x27;
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p26.png"
+              alt="Lecture evidence for question 87"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                26
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> NOTION OF COGNITION, ITS T
+                YPES AND FUNCTION S IN PHILOSOPHY, ITS ROLE IN EPISTEMOLOGI CAL
+                CONCEPT ▪ &quot;Cognition&quot; is a word that dates back to the
+                15th century when it meant &quot;thinking and awareness&quot;.
+                Attention to the cognitive process came about more than
+                twenty-three centuries ago, beginning with Aristotle and his
+                interest in the inner w...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q88">
+          <div class="meta">Question 88</div>
+          <h2>
+            According to Immanuel Kant&#x27;s philosophy, which question is
+            central to the issue of religion?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> &#x27;What am I allowed to hope?&#x27;
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture12_April26-p14.png"
+              alt="Lecture evidence for question 88"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture12_April26 / page
+                14
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF RELIGION ✓
+                Philosophy of religion is &quot;the philosophical examination of
+                the central themes and concepts involved in religious
+                traditions&quot;. Philosophical discussions on such topics date
+                from ancient times, and appear in the earliest known texts
+                concerning philosophy. The field involves many other branches of
+                philosophy, inclu...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q89">
+          <div class="meta">Question 89</div>
+          <h2>
+            According to Immanuel Kant&#x27;s philosophy, which question is
+            central to the issue of anthropology?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> &#x27;What is a man?&#x27;
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p7.png"
+              alt="Lecture evidence for question 89"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THING -IN-ITSELF German
+                philosophy XVIII – XIX centuries. Marxism philosophy within the
+                context of Soviet culture. (additional topic, lecture 7) • First
+                law of German philosophy is Thing-in-itself . In the Kantian
+                philosophy, the thing-in-itself (German: Ding an sich) is the
+                status of objects as they are, independent of representation
+                an...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q90">
+          <div class="meta">Question 90</div>
+          <h2>
+            Which logical principle in German philosophy states that a person
+            should act in such a way that the maxim of their behavior could
+            serve as a universal example?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> The categorical imperative.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture7_April26-p22.png"
+              alt="Lecture evidence for question 90"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture7_April26 / page
+                22
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF IMMANUEL KANT
+                Kant wrote “General natural history and world view”. In this
+                work he proposed: ➢ study of relative calm to movement ➢
+                emergence and destruction of matter (existence) ➢ pure reason –
+                study of cognition that world exist independently from human
+                consciousness, by this has developed a doctrine of &quot;things
+                in itself...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q91">
+          <div class="meta">Question 91</div>
+          <h2>
+            In which genres did Korkyt-ata contribute to literature and art?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Epic, storytelling, and musical art through
+            kobyz melodies.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture13_April26-p6.png"
+              alt="Lecture evidence for question 91"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture13_April26 / page
+                6
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY OF CULTURE AND
+                ART ✓The view that “art is imitation (representation)” has not
+                only been challenged, it has been moribund in at least some of
+                the arts since the 19th century. It was subsequently replaced by
+                the theory that art is expression. Instead of reflecting states
+                of the external world, art is held to reflect the inner st...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q92">
+          <div class="meta">Question 92</div>
+          <h2>
+            What fear or challenge did Korkyt -ata struggle with throughout his
+            life, leading him to stand against it?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> The fear of inevitable death.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p4.png"
+              alt="Lecture evidence for question 92"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                4
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF
+                KORKYT ATA • Legend has it that Korkyt could not come to terms
+                with the transience of human life from a young age, so he
+                decided to fight against the inevitable death. T ormented by his
+                thoughts and driven by the dream of immortality, Korkyt leaves
+                people, but everywhere and everywhere he sees death: in the
+                forest,...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q93">
+          <div class="meta">Question 93</div>
+          <h2>
+            Who authored Kutadgu Bilig, the first encyclopedic work in the Turks
+            language?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Yusuf Balasaguni.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p5.png"
+              alt="Lecture evidence for question 93"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF YUSUF
+                BAL ASAGUNI • Y usuf Balasaguni came from a certain cultural
+                area and political region, encompassing at one time Otrar
+                (Farab), Shash (Tashkent), Taraz, Chui V alley, Issyk-Kul
+                region, Ferghana, Kashgari. Culturally and linguistically, he is
+                the common ancestor of the Turkic-speaking peoples,
+                geographically h...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q94">
+          <div class="meta">Question 94</div>
+          <h2>Why did people refer to Asan-Kaigy as &quot;Sad Asan&quot;?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Because of his constant reflection and
+            sorrowful concern for the future of the people.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p7.png"
+              alt="Lecture evidence for question 94"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF THE
+                ASAN KAIGY The Asan Kaigy (in con. 14th century — 60s of the
+                15th century.) — poet, philosopher , legendary character. He is
+                nicknamed &quot;Sad Asan&quot; (&quot;kaigy&quot;) because of
+                his constant reflection. He was an influential bey of
+                Ulugh-Muhammad, in Sarai and Kazan. Asan Kaigy is the author of
+                many edifying words and phi...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q95">
+          <div class="meta">Question 95</div>
+          <h2>What words did Asan Kaigy address to Zhanibek Khan?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> &#x27;Without thinking about the future of
+            the Kazakh people, you rejoice at temporary successes.&#x27;
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p7.png"
+              alt="Lecture evidence for question 95"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF THE
+                ASAN KAIGY The Asan Kaigy (in con. 14th century — 60s of the
+                15th century.) — poet, philosopher , legendary character. He is
+                nicknamed &quot;Sad Asan&quot; (&quot;kaigy&quot;) because of
+                his constant reflection. He was an influential bey of
+                Ulugh-Muhammad, in Sarai and Kazan. Asan Kaigy is the author of
+                many edifying words and phi...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q96">
+          <div class="meta">Question 96</div>
+          <h2>
+            Who described the promised land of Zheruyuk as a place with abundant
+            pastures, flowing rivers, a mild climate, rich wildlife, and a life
+            free from grief, need, hostility, and oppression?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Asan Kaigy.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p7.png"
+              alt="Lecture evidence for question 96"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                7
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL VIEWS OF THE
+                ASAN KAIGY The Asan Kaigy (in con. 14th century — 60s of the
+                15th century.) — poet, philosopher , legendary character. He is
+                nicknamed &quot;Sad Asan&quot; (&quot;kaigy&quot;) because of
+                his constant reflection. He was an influential bey of
+                Ulugh-Muhammad, in Sarai and Kazan. Asan Kaigy is the author of
+                many edifying words and phi...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q97">
+          <div class="meta">Question 97</div>
+          <h2>
+            Which poet served as the chief advisor to the legendary Kazakh Khan
+            Abylay?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Bukhar Zhyrau.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p8.png"
+              alt="Lecture evidence for question 97"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                8
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SOCIO -POLITICAL AND
+                PHILOSOPHICAL VIEWS OF THE AKYNS -ZHYR AU OF THE XVII -XVIII
+                CENTURIES . ( BUKHAR ZHYRAU , DUL AT AKYN , M.UTEMIS OV , ETC.)
+                Bukhar zhyrau Kalkamanuly is a prominent representative of
+                Kazakh oral poetry. Chief advisor to the legendary Kazakh Khan
+                Abylay. Bukhar zhyrau is best known as a singer and advisor to
+                the khan...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q98">
+          <div class="meta">Question 98</div>
+          <h2>
+            Which poet consistently called for unity and the formation of a
+            strong, un ited Kazakh Khanate?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Bukhar Zhyrau.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p8.png"
+              alt="Lecture evidence for question 98"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                8
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SOCIO -POLITICAL AND
+                PHILOSOPHICAL VIEWS OF THE AKYNS -ZHYR AU OF THE XVII -XVIII
+                CENTURIES . ( BUKHAR ZHYRAU , DUL AT AKYN , M.UTEMIS OV , ETC.)
+                Bukhar zhyrau Kalkamanuly is a prominent representative of
+                Kazakh oral poetry. Chief advisor to the legendary Kazakh Khan
+                Abylay. Bukhar zhyrau is best known as a singer and advisor to
+                the khan...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q99">
+          <div class="meta">Question 99</div>
+          <h2>
+            Who among Kazakh poets is regarded as the founder of the satirical
+            genre?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Dulat Babatayuly.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p9.png"
+              alt="Lecture evidence for question 99"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                9
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SOCIO -POLITICAL AND
+                PHILOSOPHICAL VIEWS OF THE AKYNS -ZHYR AU OF THE XVII -XVIII
+                CENTURIES . ( BUKHAR ZHYRAU , DUL AT AKYN , M.UTEMIS OV , ETC.)
+                Dulat Babatayuly (1802, Ayaguz village, Semipalatinsk region,
+                Omsk province (now Ayaguz district, East Kazakhstan region) —
+                1874, ibid.) — Russian-Kazakh poet. There is practically no
+                informati...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q100">
+          <div class="meta">Question 100</div>
+          <h2>
+            Which of the mentioned words does not align with the core principles
+            of the &quot;Rukhani Zhangyru&quot; state program?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Revolutionary development does not align
+            with the core principles of Rukhani Zhangyru.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p17.png"
+              alt="Lecture evidence for question 100"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SIGNIFICANCE OF THE
+                SPIRITUAL HERITAGE OF OUTSTANDING FIGURES OF THE KAZAKH PEOPLE
+                IN THE LATE 19TH AND EARLY 20TH CENTURIES FOR THE FORMATION AND
+                DEVELOPMENT OF A SOVEREIGN AND INDEPENDENT KAZAKHSTAN.
+                &quot;RUKHANI ZHANGYRU &quot; PROGRAM. ✓ The program “Rouhani
+                Zhangyru” was developed on the basis of the provisions of the
+                Head of State’s article...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q101">
+          <div class="meta">Question 101</div>
+          <h2>
+            What are the six core principles of the &quot;Rukhani Zhangyru&quot;
+            state program?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Competitiveness, pragmatism, preservation
+            of national identity, cult of knowledge, evolutionary development,
+            and openness of consciousness.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p17.png"
+              alt="Lecture evidence for question 101"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SIGNIFICANCE OF THE
+                SPIRITUAL HERITAGE OF OUTSTANDING FIGURES OF THE KAZAKH PEOPLE
+                IN THE LATE 19TH AND EARLY 20TH CENTURIES FOR THE FORMATION AND
+                DEVELOPMENT OF A SOVEREIGN AND INDEPENDENT KAZAKHSTAN.
+                &quot;RUKHANI ZHANGYRU &quot; PROGRAM. ✓ The program “Rouhani
+                Zhangyru” was developed on the basis of the provisions of the
+                Head of State’s article...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q102">
+          <div class="meta">Question 102</div>
+          <h2>
+            Which Kazakh poet advanced the traditions of heroic singers,
+            reshaped poetic imagery, and reinforced social themes, contributing
+            to the rise of civic lyrics in Kazakh poetry?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Makhambet Utemisov.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p10.png"
+              alt="Lecture evidence for question 102"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                10
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SOCIO -POLITIC AL AND
+                PHILOSOPHICAL VIEWS OF THE AKYNS -ZHYR AU OF THE XVII -XVIII
+                CENTURIES . ( BUKHAR ZHYRAU , DUL AT AKYN , M.UTEMIS OV , ETC.)
+                Makhambet Utemisov (kaz. Makhambet Otemisuly; 1803, Bukeevskaya
+                Horde, Russian Empire — October 20, 1846) — one of the leaders
+                of the Kazakh uprising in Western Kazakhstan in 1836-1837. Poet
+                (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q103">
+          <div class="meta">Question 103</div>
+          <h2>
+            Who among Kazakh writers acquired proficiency in Arabic, Persian,
+            Turkish, and Russian on his own?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Shakarim Kudaiberdiev.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p14.png"
+              alt="Lecture evidence for question 103"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                14
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL AND
+                IDEOLOGICAL -POLITICAL VIEWS, CREATIVE AND SOCIAL ACTIVITIES OF
+                SH. KUDAIBERDIYEV , S. TORAIGYROV , M. DULATOV , A. BAITURSYNOV
+                , M.ZH . KOPEEV , M.S. KASHIMOV . CONTINUATION AND DEVELOPMENT
+                OF THE IDEAS OF ENLIGHTENMENT AND NATIONAL SELF -DETERMINATION.
+                Shakarim Kudaiberdiev (1858-1931)- Kazakh poet, writer,
+                translator...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q104">
+          <div class="meta">Question 104</div>
+          <h2>
+            What literary form or genre did Akhmet Baitursynov bring into Kazakh
+            literature?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> The fable genre.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture8_April26-p16.png"
+              alt="Lecture evidence for question 104"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture8_April26 / page
+                16
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHICAL AND
+                IDEOLOGICAL -POLITICAL VIEWS, CREATIVE AND SOCIAL ACTIVITIES OF
+                SH. KUDAIBERDIYEV , S. TORAIGYROV , M. DULATOV , A. BAITURSYNOV
+                , M.ZH . KOPEEV , M.S. KASHIMOV . CONTINUATION AND DEVELOPMENT
+                OF THE IDEAS OF ENLIGHTENMENT AND NATIONAL SELF -DETERMINATION.
+                Akhmet Baitursynuly made a great contribution to the development
+                o...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q105">
+          <div class="meta">Question 105</div>
+          <h2>
+            Who said following statement “Science is organized knowledge, while
+            the wisdom is organized life”?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Immanuel Kant.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p5.png"
+              alt="Lecture evidence for question 105"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DETERMINATION TROUGH QUOTES
+                AND QUESTIONS ✓“Philosophy begins in wonder. And, at the end,
+                when philosophic thought has done its best, the wonder remains.
+                ”(Alfred North Whitehead) ✓“Science is organized knowledge.
+                Wisdom is organized life. ” (Immanuel Kant, Critique of Pure
+                Reason) ✓“Science is the great antidote/противоядие to the
+                poiso...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q106">
+          <div class="meta">Question 106</div>
+          <h2>
+            Who said following statement “Wonder is the seed of knowledge”?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Francis Bacon.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p18.png"
+              alt="Lecture evidence for question 106"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                18
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> JOHN LOCKE’S STATEMENTS ➢
+                Categories of idea: idea of modes, idea of substances, idea of
+                relations. ➢ Three different degrees of knowledge: intuitive
+                knowledge is an immediate perception, demonstrative knowledge
+                requires intervening steps, as in a mathematical and logical
+                proof. Sensitive knowledge of particular external objects
+                through ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q107">
+          <div class="meta">Question 107</div>
+          <h2>
+            Who said following statement “The aim of science is not to open the
+            door to infinite wisdom, but to set a limit to infinite error”?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Bertolt Brecht.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p5.png"
+              alt="Lecture evidence for question 107"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                5
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DETERMINATION TROUGH QUOTES
+                AND QUESTIONS ✓“Philosophy begins in wonder. And, at the end,
+                when philosophic thought has done its best, the wonder remains.
+                ”(Alfred North Whitehead) ✓“Science is organized knowledge.
+                Wisdom is organized life. ” (Immanuel Kant, Critique of Pure
+                Reason) ✓“Science is the great antidote/противоядие to the
+                poiso...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q108">
+          <div class="meta">Question 108</div>
+          <h2>What is studying the bases law of society, its development?</h2>
+          <p class="answer"><strong>Answer:</strong> Social philosophy.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p9.png"
+              alt="Lecture evidence for question 108"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                9
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY SECTION ✓
+                Ontology – study of existence, its principles , base and
+                category ✓ Epistemology – study of cognition, cognitive problems
+                , its opportunity, relation between knowledge and reality,
+                achievement of truth, to reveal facts. ✓ Axiology – study of
+                values, its social, political and moral context ✓ Social
+                philosophy – study ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q109">
+          <div class="meta">Question 109</div>
+          <h2>What is studying of universe, world and nature?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Dialectology, in the lecture&#x27;s
+            terminology for the study of universe, world, and nature.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p9.png"
+              alt="Lecture evidence for question 109"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                9
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> PHILOSOPHY SECTION ✓
+                Ontology – study of existence, its principles , base and
+                category ✓ Epistemology – study of cognition, cognitive problems
+                , its opportunity, relation between knowledge and reality,
+                achievement of truth, to reveal facts. ✓ Axiology – study of
+                values, its social, political and moral context ✓ Social
+                philosophy – study ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q110">
+          <div class="meta">Question 110</div>
+          <h2>
+            What seeks to understand the relation between reality and cognition?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Category.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 110"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q111">
+          <div class="meta">Question 111</div>
+          <h2>
+            What word refers to the universal base related to everyone and
+            everything?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Law.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 111"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q112">
+          <div class="meta">Question 112</div>
+          <h2>
+            What considers as a first idea, central definition, base of each
+            system?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Principle.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 112"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q113">
+          <div class="meta">Question 113</div>
+          <h2>
+            What considers as an origin, condition and process of development of
+            object or phenomenon?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Genesis.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 113"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q114">
+          <div class="meta">Question 114</div>
+          <h2>What considers as a short explanation of researched object?</h2>
+          <p class="answer"><strong>Answer:</strong> Definition.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p12.png"
+              alt="Lecture evidence for question 114"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                12
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> MAIN CONCEPT OF PHILOSOPHY ✔
+                Category – look for relation between reality and cognition ✔ Law
+                – has universe base related to everyone and everything ✔
+                Principle – first idea, central definition, base of each system
+                ✔ Genesis – origin, condition and process of development of
+                object or phenomenon ✔ Definition – a short explanation of
+                resea...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q115">
+          <div class="meta">Question 115</div>
+          <h2>
+            What historical period of the philosophy is founded on the principle
+            of Cosmo-centrism?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Ancient philosophy.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p29.png"
+              alt="Lecture evidence for question 115"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> S OC R ATES , P L ATO, AR I
+                S TOTLE Socrates, &quot;I know that I know nothing. Know
+                yourself&quot;. Compares method of philosophizing with art,
+                arguing that helping to the birth of truth. Unfairly he was
+                accused of blasphemy and sentenced to death, but bravely
+                accepted death after drinking a cup of poison Plato, the ancient
+                founder of idealism, a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q116">
+          <div class="meta">Question 116</div>
+          <h2>
+            What historical period of the philosophy is founded on the principle
+            of Theo-centrism?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Medieval philosophy.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lectures2_3_4_AdditionalTopics_April26-p30.png"
+              alt="Lecture evidence for question 116"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong>
+                MDE172_Lectures2_3_4_AdditionalTopics_April26 / page 30
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> THE BASIC PRINCIPLES OF THE
+                MEDIEVAL PHILOSOPHY ▪ Feature of the European Medieval
+                philosophy – is based on the connection of Christianity with
+                ancient philosophy. ▪ The peculiarity of the Medieval Eastern
+                philosophy – is based on the connection of Islam with
+                Aristotelian science. ▪ The main ontological principle of
+                Medieval Scholasticis...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q117">
+          <div class="meta">Question 117</div>
+          <h2>
+            What historical period of the philosophy is founded on the principle
+            of Anthropocentrism or humanism?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Renaissance philosophy.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture5_April26-p11.png"
+              alt="Lecture evidence for question 117"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture5_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> HUMANISM AND HELIOCENTRISM •
+                The essence of the philosophy of Humanism - the principle was
+                based on the belief to the infinite possibilities of man and his
+                capacity to improve states that man has the crown of nature, he
+                is in the center of the universe. • The essence of the concept
+                of heliocentrism - was proposed by Nicolaus Copernicus (...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q118">
+          <div class="meta">Question 118</div>
+          <h2>What does the term Asceticism mean?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Asceticism means self-restraint,
+            renunciation, and strict disciplined living.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture11_April26-p9.png"
+              alt="Lecture evidence for question 118"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture11_April26 / page
+                9
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> SCIENTISM • Scientism is the
+                belief that science and the scientific method are the best or
+                only way to render truth about the world and reality. • While
+                the term was defined originally to mean &quot;methods and
+                attitudes typical of or attributed to natural scientists&quot;,
+                some scholars, as well as political and religious leaders, have
+                also adopt...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q119">
+          <div class="meta">Question 119</div>
+          <h2>
+            Which Chinese philosophical concept suggests that nature and human
+            life flow along a certain path?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Taoism or Tao.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p24.png"
+              alt="Lecture evidence for question 119"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FEATURES OF ANCIENT CHINESE
+                PHILOSOPHY ✓T aoism- the life of nature and people flows along a
+                certain path. T ao- own way, which is achievable only if the
+                person purity of thought, humility and compassion, as well as
+                non-interference, do not abuse the nature of things.
+                ✓Confucianism - rights of every human life determines the heaven
+                (Sky)...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q120">
+          <div class="meta">Question 120</div>
+          <h2>
+            Who said the famous quotes, &#x27;I know that I know nothing. Know
+            yourself&#x27;?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Socrates.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p29.png"
+              alt="Lecture evidence for question 120"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> S OC R ATES , P L ATO, AR I
+                S TOTLE Socrates, &quot;I know that I know nothing. Know
+                yourself&quot;. Compares method of philosophizing with art,
+                arguing that helping to the birth of truth. Unfairly he was
+                accused of blasphemy and sentenced to death, but bravely
+                accepted death after drinking a cup of poison Plato, the ancient
+                founder of idealism, a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q121">
+          <div class="meta">Question 121</div>
+          <h2>
+            Which ancient Greek philosopher proposed th e idea of idealism and
+            founded the first Academy in Athens?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Plato.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p29.png"
+              alt="Lecture evidence for question 121"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> S OC R ATES , P L ATO, AR I
+                S TOTLE Socrates, &quot;I know that I know nothing. Know
+                yourself&quot;. Compares method of philosophizing with art,
+                arguing that helping to the birth of truth. Unfairly he was
+                accused of blasphemy and sentenced to death, but bravely
+                accepted death after drinking a cup of poison Plato, the ancient
+                founder of idealism, a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q122">
+          <div class="meta">Question 122</div>
+          <h2>Which ancient Greek philosopher founded the first Lyceum?</h2>
+          <p class="answer"><strong>Answer:</strong> Aristotle.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture2_April26-p29.png"
+              alt="Lecture evidence for question 122"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture2_April26 / page
+                29
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> S OC R ATES , P L ATO, AR I
+                S TOTLE Socrates, &quot;I know that I know nothing. Know
+                yourself&quot;. Compares method of philosophizing with art,
+                arguing that helping to the birth of truth. Unfairly he was
+                accused of blasphemy and sentenced to death, but bravely
+                accepted death after drinking a cup of poison Plato, the ancient
+                founder of idealism, a...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q123">
+          <div class="meta">Question 123</div>
+          <h2>How is the method of induction defined?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Induction is reasoning from the particular
+            to the general.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p24.png"
+              alt="Lecture evidence for question 123"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF INDUCTION AND
+                DEDUCTION RESULT, SOLUTION  Task: I give you 100 keys to open
+                only one door in H building of SDU, what will you do and How??
+                Induction is a method of reasoning from the particular to the
+                general. Deduction is a method of reasoning from the general to
+                the specific/particular (method of reasoning in which the
+                tota...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q124">
+          <div class="meta">Question 124</div>
+          <h2>How is the method of deduction defined?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> Deduction is reasoning from the general to
+            the particular.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p24.png"
+              alt="Lecture evidence for question 124"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF INDUCTION AND
+                DEDUCTION RESULT, SOLUTION  Task: I give you 100 keys to open
+                only one door in H building of SDU, what will you do and How??
+                Induction is a method of reasoning from the particular to the
+                general. Deduction is a method of reasoning from the general to
+                the specific/particular (method of reasoning in which the
+                tota...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q125">
+          <div class="meta">Question 125</div>
+          <h2>
+            Which author introduced the concept of the social contract in the
+            book “Leviathan”?
+          </h2>
+          <p class="answer"><strong>Answer:</strong> Thomas Hobbes.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p11.png"
+              alt="Lecture evidence for question 125"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                MODERN TIME I. The founder of British empiricism and incomplete
+                induction method - Francis Bacon II. Author of theory of the
+                social contract and the book &quot;Leviathan&quot; - Thomas
+                Hobbes III. The founder of English sensationalism and the
+                concept of separation of powers - John Locke (principle of
+                nose-fist) IV. The ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q126">
+          <div class="meta">Question 126</div>
+          <h2>Who is considered the founder of English sensationalism?</h2>
+          <p class="answer"><strong>Answer:</strong> John Locke.</p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p11.png"
+              alt="Lecture evidence for question 126"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                MODERN TIME I. The founder of British empiricism and incomplete
+                induction method - Francis Bacon II. Author of theory of the
+                social contract and the book &quot;Leviathan&quot; - Thomas
+                Hobbes III. The founder of English sensationalism and the
+                concept of separation of powers - John Locke (principle of
+                nose-fist) IV. The ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q127">
+          <div class="meta">Question 127</div>
+          <h2>
+            If you&#x27;re given 100 keys to open just one door, how would you
+            use deductive method to find the correct key?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Use a deductive approach: first narrow the
+            keys by general features of the lock and key, then test the key that
+            matches those features.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p24.png"
+              alt="Lecture evidence for question 127"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF INDUCTION AND
+                DEDUCTION RESULT, SOLUTION  Task: I give you 100 keys to open
+                only one door in H building of SDU, what will you do and How??
+                Induction is a method of reasoning from the particular to the
+                general. Deduction is a method of reasoning from the general to
+                the specific/particular (method of reasoning in which the
+                tota...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q128">
+          <div class="meta">Question 128</div>
+          <h2>
+            If you&#x27;re given 100 keys to open just one door, how would you
+            use inductive method to find the correct key?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Use an inductive approach: try individual
+            keys one by one and infer from repeated trials which key opens the
+            door.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture1_April26-p24.png"
+              alt="Lecture evidence for question 128"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture1_April26 / page
+                24
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> METHODS OF INDUCTION AND
+                DEDUCTION RESULT, SOLUTION  Task: I give you 100 keys to open
+                only one door in H building of SDU, what will you do and How??
+                Induction is a method of reasoning from the particular to the
+                general. Deduction is a method of reasoning from the general to
+                the specific/particular (method of reasoning in which the
+                tota...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q129">
+          <div class="meta">Question 129</div>
+          <h2>
+            What number of fundamental substances of matter did Gottfried
+            Leibniz introduce in his Monadology book?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> An infinite number of monads.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p11.png"
+              alt="Lecture evidence for question 129"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                MODERN TIME I. The founder of British empiricism and incomplete
+                induction method - Francis Bacon II. Author of theory of the
+                social contract and the book &quot;Leviathan&quot; - Thomas
+                Hobbes III. The founder of English sensationalism and the
+                concept of separation of powers - John Locke (principle of
+                nose-fist) IV. The ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q130">
+          <div class="meta">Question 130</div>
+          <h2>
+            Who is known for the doctrine of substance monism and the book
+            Ethics?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Benedict (Baruch) Spinoza.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p11.png"
+              alt="Lecture evidence for question 130"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                11
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> OUTSTANDING PHILOSOPHERS OF
+                MODERN TIME I. The founder of British empiricism and incomplete
+                induction method - Francis Bacon II. Author of theory of the
+                social contract and the book &quot;Leviathan&quot; - Thomas
+                Hobbes III. The founder of English sensationalism and the
+                concept of separation of powers - John Locke (principle of
+                nose-fist) IV. The ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q131">
+          <div class="meta">Question 131</div>
+          <h2>
+            Which of these statements are in line with Francis Bacon’s
+            philosophy?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Statements about induction, observation,
+            and moving from particular facts to general conclusions fit Francis
+            Bacon.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p14.png"
+              alt="Lecture evidence for question 131"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                14
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> FRANCIS BACON’S STATEMENTS ➢
+                Knowledge should be used to control nature for the benefit and
+                liberation of humanity ➢ Knowledge should be classified ➢
+                Proposed observation as the best methods of learning ➢ Humanism
+                is delicate style of learning that gives no serious business of
+                science ➢ Eliminative induction (observations) ➢ Hypothesis s...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q132">
+          <div class="meta">Question 132</div>
+          <h2>What did John Locke say about ideas?</h2>
+          <p class="answer">
+            <strong>Answer:</strong> All ideas come from experience,
+            specifically from sensation and reflection.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p17.png"
+              alt="Lecture evidence for question 132"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                17
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> JOHN LOCKE’S STATEMENTS ➢
+                The center of his theory is that all ideas are derived from
+                experience. ➢ His theory of knowledge aims to avoid the extremes
+                of groundless speculation and universal skepticism, to clarify
+                the prospects of the new sciences, and to show how moral
+                knowledge is possible. ➢ All ideas come from sensation and
+                reflectio...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q133">
+          <div class="meta">Question 133</div>
+          <h2>
+            What does the &#x27;nose–fist&#x27; principle mean in the context of
+            human rights and duties?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Your freedom ends where another
+            person&#x27;s freedom begins.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p18.png"
+              alt="Lecture evidence for question 133"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                18
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> JOHN LOCKE’S STATEMENTS ➢
+                Categories of idea: idea of modes, idea of substances, idea of
+                relations. ➢ Three different degrees of knowledge: intuitive
+                knowledge is an immediate perception, demonstrative knowledge
+                requires intervening steps, as in a mathematical and logical
+                proof. Sensitive knowledge of particular external objects
+                through ...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q134">
+          <div class="meta">Question 134</div>
+          <h2>
+            According to René Descartes, how many fundamental substances exist?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Two fundamental substances.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p20.png"
+              alt="Lecture evidence for question 134"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                20
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> DOCTRINE OF SUBSTANCE I.
+                According to Descartes there are two substances: spiritual - God
+                and the created them - the material world II. According to
+                Spinoza - there is a single substance - a fusion of God and
+                nature III. According to Leibniz - there are many substances -
+                monads
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="q135">
+          <div class="meta">Question 135</div>
+          <h2>
+            Which of these statements reflects the philosophy of George
+            Berkeley?
+          </h2>
+          <p class="answer">
+            <strong>Answer:</strong> Only minds or spirits and their ideas truly
+            exist; matter as an independent substance is denied.
+          </p>
+
+          <div class="evidence">
+            <img
+              loading="lazy"
+              src="assets/pages/MDE172_Lecture6_April26-p21.png"
+              alt="Lecture evidence for question 135"
+            />
+            <div class="evidence-text">
+              <p>
+                <strong>Lecture source:</strong> MDE172_Lecture6_April26 / page
+                21
+              </p>
+              <p>
+                <strong>Extracted snippet:</strong> GEORGE BERKELEY’S STATEMENTS
+                ➢ Berkley views Locke’s philosophy as skeptical and atheistic;
+                he overcomes these two faults, dramatically, by denying the
+                existence of material substance. Minds and their ideas are all
+                that exist. Our ideas of sense perception are not caused by
+                material objects that lie behind a veil of perception, but
+                direc...
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
