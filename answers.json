@@ -42,7 +42,7 @@
   {
     "number": 5,
     "question": "What is the correct order for the main concepts of philosophy among offered below?",
-    "answer": "Category -> Law -> Principle -> Genesis -> Definition.",
+    "answer": "Principle -> Genesis -> Category -> Law -> Definition.",
     "note": "The lecture also shows a wider list of concepts, but this is the ordered core list defined in Lecture 1.",
     "source": "MDE172_Lecture1_April26",
     "page": 12,
